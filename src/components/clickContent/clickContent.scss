@@ -1,0 +1,85 @@
+@import "@/lib/reset.scss";
+
+html, body{
+  @include background-color(#f1f3f5);
+}
+.clickContent{
+  .topNew{
+    position: relative;
+    top:0;
+    @include rect(100%, 1.5rem);
+    span{
+      @include text-color(white);
+      @include font-size(.18rem);
+      @include margin(.2rem 0 0 .1rem);
+      position: absolute;
+    }
+    img{
+      @include rect(100%, auto);
+    }
+  }
+  .list{
+    @include rect(100%, 100%);
+    @include padding(.15rem);
+    position: absolute;
+    top: 0.6rem;
+    .am-list-view-scrollview{
+      @include rect(100%, 100%);
+      border: 0;
+      .am-list-view-scrollview-content{
+        @include border-radius(.15rem .15rem 0 0);
+        @include rect(100%, 100%);
+        .list_item{
+          @include rect(100%, auto);
+          @include overflow();
+          @include background-color(white);
+          margin-bottom: .15rem;
+          @include border-radius(.15rem .15rem 0 0);
+          img{
+            @include rect(100%, 1.6rem);
+          }
+          .tit{
+            @include ellipsis();
+            @include padding(.1rem .1rem 0 .1rem);
+          }
+          .desc{
+            @include text-color(#666);
+            @include font-size(.12rem);
+            padding-left: .1rem;
+          }
+          .price{
+            @include flexbox();
+            @include justify-content(space-between);
+            @include padding(0 .1rem .1rem .1rem);
+            .left{
+              span{
+                @include font-size(.12rem);
+                &:nth-child(1){
+                  @include background-color(#ff2436);
+                  @include text-color(white);
+                  @include border-radius(.08rem);
+                  @include padding(.05rem);
+                }
+                &:nth-child(2){
+                  @include text-color(#ff2436);
+                  @include font-size(.18rem);
+                  @include font-weight(700);
+                }
+                &:nth-child(3){
+                  @include text-color(#666);
+                  @include font-size(.14rem);
+                  text-decoration: line-through;
+                }
+              }
+            }
+            .right{
+              span{
+                @include text-color(#ff2436);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,180 @@
+@import "@/lib/reset.scss";
+
+.result_header{
+  @include padding(0 .1rem);
+  @include rect(100%, 0.44rem);
+  @include flexbox();
+  @include background-color(white);
+  .am-search{
+    @include flex();
+    height: 100%;
+    border-bottom: 1px solid white;
+    @include background-color(white);
+    .am-search-cancel{
+      @include font-size(.14rem);
+      @include text-color(#ff4965);
+    }
+    .am-search-input{
+      border: 1px solid #ccc;
+    }
+
+  }
+  p{
+    @include line-height(.44rem);
+    @include text-color(#ff4965)
+  }
+}
+.content{
+  @include overflow();
+  -webkit-overflow-scrolling:touch;
+  .but{
+    @include flexbox();
+    @include background-color(white);
+    p{
+      @include flex();
+      @include text-align();
+      @include line-height(.5rem);
+      @include font-size(.16rem);
+      &.active{
+        @include text-color(#ff4965)
+      }
+    }
+  }
+  .more{
+    position: fixed;
+    z-index: 999;
+    @include rect(.5rem, .5rem);
+    @include border-radius(50%);
+    @include background-color(#3a3e47);
+    bottom: .5rem;
+    right: .2rem;
+    @include text-align();
+    @include line-height(.5rem);
+    @include font-size(.26rem);
+    @include text-color(white);
+  }
+  .more_func{
+    @include flexbox();
+    z-index: 999;
+    @include rect(2.5rem, .5rem);
+    @include border-radius(.5rem);
+    position: fixed;
+    bottom: .5rem;
+    right: .2rem;
+    @include background-color(#3a3e47);
+    li{
+      @include flex();
+      @include text-color(white);
+      @include text-align();
+      &:nth-child(4),&:nth-child(5){
+        p{
+          @include line-height(.5rem);
+        }
+      }
+      p{
+        @include font-size(.18rem);
+      }
+    }
+  }
+  .am-list-view-scrollview{
+    @include rect(100%, 100%);
+    @include flexbox();
+    @include overflow();
+    @include flex-wrap(wrap);
+    @include background-color(white);
+    @include justify-content(space-between);
+    .am-list-view-scrollview-content{
+      @include rect(100%, 100%);
+      .list-view-section-body{
+        @include rect(100%, 100%);
+        @include flexbox();
+        @include overflow();
+        @include flex-wrap(wrap);
+        @include background-color(white);
+        @include justify-content(space-between);
+        li{
+          list-style: none;
+          padding-top: .05rem;
+          @include text-align();
+          @include rect(50%, 3rem);
+          border: 1px solid #ccc;
+          img{
+            @include rect(100%, auto);
+          }
+          p{
+            @include rect(100%, .4rem);
+            @include ellipsis(null, 2);
+          }
+          .price{
+            @include padding(.16rem .03rem 0 .03rem);
+            @include flexbox();
+            @include justify-content(space-between);
+            .left{
+              span{
+                i{
+                  @include font-size(.16rem);
+                }
+                &:nth-child(1){
+                  @include text-color(#ff4965);
+                  @include font-size(.18rem);
+                }
+                &:nth-child(2){
+                  text-decoration: line-through;
+                  @include text-color(#999);
+                }
+              }
+            }
+            .right{
+              span{
+                @include font-size(.12rem);
+                @include text-color(#666);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //.result_List{
+  //
+  //  li{
+  //    padding-top: .05rem;
+  //    @include text-align();
+  //    @include rect(50%, 2.75rem);
+  //    border: 1px solid #ccc;
+  //    img{
+  //      @include rect(100%, auto);
+  //    }
+  //    p{
+  //      @include rect(100%, .4rem);
+  //      @include ellipsis(null, 2);
+  //    }
+  //    .price{
+  //      @include padding(.16rem .03rem 0 .03rem);
+  //      @include flexbox();
+  //      @include justify-content(space-between);
+  //      .left{
+  //        span{
+  //          i{
+  //            @include font-size(.16rem);
+  //          }
+  //          &:nth-child(1){
+  //            @include text-color(#ff4965);
+  //            @include font-size(.18rem);
+  //          }
+  //          &:nth-child(2){
+  //            text-decoration: line-through;
+  //            @include text-color(#999);
+  //          }
+  //        }
+  //      }
+  //      .right{
+  //        span{
+  //          @include font-size(.12rem);
+  //          @include text-color(#666);
+  //        }
+  //      }
+  //    }
+  //  }
+  //}
+}

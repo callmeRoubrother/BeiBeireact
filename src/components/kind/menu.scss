@@ -1,0 +1,102 @@
+@import "@/lib/reset.scss";
+html,body{
+  @include rect(100%, 100%);
+}
+.kind_content{
+  @include rect(100%, 100%);
+  .header{
+    span{
+      @include text-color(white);
+    }
+  }
+  .am-tabs{
+    .am-tabs-tab-bar-wrap{
+      .am-tabs-default-bar-content{
+        @include flexbox();
+        @include flex-direction(column);
+        .am-tabs-default-bar-underline{
+          height: .2rem;
+        }
+        .am-tabs-default-bar-tab{
+          @include flex();
+          width: auto;
+          &.am-tabs-default-bar-tab-active{
+          }
+        }
+      }
+    }
+    .am-tabs-content-wrap{
+      @include background-color(white);
+      .am-tabs-pane-wrap{
+        @include rect(100%, 100%);
+        @include padding(.2rem);
+        div{
+          @include rect(100%, 100%);
+          .ul_List{
+            @include flexbox();
+            @include flex-wrap(wrap);
+            @include justify-content(space-around);
+            .item{
+              @include margin(0 0 .2rem 0);
+              img{
+                @include rect(.6rem, .6rem);
+              }
+              p{
+                @include text-color(black);
+                @include text-align();
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .cover{
+    @include rect(100%, 100%);
+    @include flexbox();
+    .left{
+      @include rect(30%, 100%);
+      .left_cover{
+        @include rect(100%, 100%);
+        border-right: 1px solid #ccc;
+        @include background-color(white);
+        li{
+          @include text-align();
+          @include line-height(.5rem);
+          &.active{
+            @include text-color(#ff4965);
+          }
+        }
+      }
+    }
+    .right{
+      @include overflow();
+      @include flex();
+      @include rect(auto, 100%);
+      .list_cover{
+        @include rect(100%, 100%);
+        @include background-color(white);
+        display: none;
+        .right_cover{
+          @include background-color(white);
+          @include rect(100%, auto);
+          @include flexbox();
+          @include flex-wrap(wrap);
+          @include padding(.1rem);
+          @include justify-content(space-around);
+          li{
+            @include margin(0 0 .2rem 0);
+            img{
+              @include rect(.6rem, .6rem);
+            }
+            p{
+              @include text-color(black);
+              @include text-align();
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

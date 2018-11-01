@@ -1,0 +1,32 @@
+@import '@/lib/reset.scss';
+.nav{
+  @include margin(.08rem 0 0 0);
+  @include rect(100%, .5rem);
+  @include background-color(white);
+  @include flexbox();
+  @include line-height(.5rem);
+  div{
+    @include rect(90%, 100%);
+    @include overflow();
+    @include padding(0 .1rem);
+    ul{
+      @include flexbox();
+      li{
+        display: block;
+        @include rect(auto, 100%);
+        @include text-color(#333);
+        @include margin(0 .1rem);
+        @include wrap(no-wrap);
+        &.active{
+          @include text-color(#f66);
+        }
+      }
+    }
+  }
+  span{
+    @include rect(10%, 100%);
+    @include text-align();
+    @include line-height(.5rem);
+    @include font-size(.22rem);
+  }
+}

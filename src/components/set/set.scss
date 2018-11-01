@@ -1,0 +1,38 @@
+@import "@/lib/reset.scss";
+
+.setContent{
+  .header{
+    @include background-color(white);
+    span{
+      @include text-color(#2c2c2c);
+    }
+  }
+  .content{
+    ul{
+      margin-top: .1rem;
+      background-color: white;
+      li{
+        @include flexbox();
+        @include justify-content(space-between);
+        @include rect(100%, .5rem);
+        @include line-height(.5rem);
+        padding: 0 .1rem;
+        border-bottom: 1px solid #ccc;
+        &:nth-child(1){
+          i{
+            @include text-color(#ef8498)
+          }
+        }
+        &:nth-child(2){
+          i{
+            @include text-color(#ef8498)
+          }
+        }
+        i{
+          margin-right: .1rem;
+          @include text-color(#98bcf6)
+        }
+      }
+    }
+  }
+}

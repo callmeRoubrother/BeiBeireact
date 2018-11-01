@@ -1,0 +1,154 @@
+@import "@/lib/reset.scss";
+.header{
+  @include padding(0 .1rem);
+  @include background-color(#ff4965);
+  @include justify-content(space-between);
+  @include line-height(.44rem);
+  span{
+    @include text-color(white);
+  }
+  p{
+    @include text-color(white);
+  }
+  em{
+    @include text-color(white);
+  }
+}
+.login{
+  text-align: center;
+  .logo{
+    @include rect(100%, .77rem);
+    @include text-align();
+    @include line-height(.77rem);
+    @include margin(.2rem 0);
+    img{
+      @include rect(1rem, .47rem);
+    }
+  }
+  .phoneNum, .psw{
+    @include rect(auto, .5rem);
+    @include margin(0 .3rem);
+    @include flexbox();
+    border-bottom: 1px solid #e8e8e8;
+    span{
+      @include font-size(.2rem);
+      @include line-height(.5rem);
+      i{
+        @include padding(0 .1rem);
+      }
+    }
+    input{
+      border: 0;
+      padding-left: .2rem;
+      @include flex();
+    }
+  }
+  .psw{
+    position: relative;
+    input{
+      padding:0;
+    }
+    i{
+      @include rect(.2rem, .15rem);
+      @include text-color(#979797);
+      @include font-size(.22rem);
+      position: absolute;
+      right: 0;
+      top: .1rem;
+    }
+  }
+  .sub{
+    text-align: center;
+    outline: none;
+    border: 0;
+    @include rect(80%, .5rem);
+    @include background-color(#ff4965);
+    @include border-radius(.5rem);
+    @include margin(.3rem auto);
+    @include text-color(white);
+    @include font-size(.18rem);
+  }
+  .forgetIt{
+    @include text-align();
+    em{
+      @include margin(0 .1rem);
+      @include text-color(#ededed);
+    }
+  }
+  .otherLogin{
+    position: fixed;
+    bottom: 1rem;
+    @include rect(100%, auto);
+    @include flexbox();
+    @include margin(0 5%);
+    span{
+      @include rect(30%, auto);
+      border-bottom: 1px solid #e7e7e7;
+      transform: translateY(-50%);
+    }
+    p{
+      @include rect(30%, auto);
+    }
+  }
+  .mint-swipe{
+    position: fixed;
+    bottom: 0;
+    @include rect(100%, .8rem);
+    .mint-swipe-item{
+      ul{
+        @include rect(100%, 100%);
+        @include flexbox();
+        li{
+          @include flex();
+          @include text-align();
+          &:nth-child(1){
+            span{
+              background: url("http://www.iqiyipic.com/common/fix/v3-login/login-other.png") no-repeat -205px -86px;
+            }
+          }
+          &:nth-child(2){
+            span{
+              background: url("http://www.iqiyipic.com/common/fix/v3-login/login-other.png") no-repeat -205px 0;
+            }
+          }
+          &:nth-child(3){
+            span{
+              background: url("http://www.iqiyipic.com/common/fix/v3-login/login-other.png") no-repeat -102px 0;
+            }
+          }
+          &:nth-child(4){
+            span{
+              background: url("http://www.iqiyipic.com/common/fix/v3-login/login-other.png") no-repeat -306px 0;
+            }
+          }
+          span{
+            display: inline-block;
+            @include rect(.5rem, .5rem);
+            @include border-radius(50%);
+          }
+        }
+      }
+      &:nth-child(2){
+        ul{
+          li{
+            &:nth-child(1){
+              span{
+                background: url("http://www.iqiyipic.com/common/fix/v3-login/login-other.png") no-repeat -306px -86px;
+              }
+            }
+            &:nth-child(2){
+              span{
+                background: url("http://www.iqiyipic.com/common/fix/v3-login/login-other.png") no-repeat -205px -86px;
+              }
+            }
+            &:nth-child(3){
+              span{
+                background: url("http://www.iqiyipic.com/common/fix/v3-login/login-other.png") no-repeat 0 -86px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

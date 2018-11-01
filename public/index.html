@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <meta name="referrer" content="no-referrer" />
+    <link rel="stylesheet" href="./swiper.min.css">
+    <link rel="stylesheet" href="./animate.min.css">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_879963_npyn1eam7o.css">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+    <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
+    <script>
+      if ('addEventListener' in document) {
+        document.addEventListener('DOMContentLoaded', function() {
+          FastClick.attach(document.body);
+        }, false);
+      }
+      if(!window.Promise) {
+        document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div class="swiper-container" id="swiper-cover">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="img ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="1s" swiper-animate-delay="1s">
+            <img src="http://res1.eqh5.com/FtNbNwHA-EqYXYky7cBpG0RGDysG?imageMogr2/auto-orient/thumbnail/54x123%3E/format/webp" alt="">
+          </div>
+          <div class="right_img ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
+            <img src="http://res1.eqh5.com/FqhhEwOYaC5SIF4zrOy0OiK1fn_i?imageMogr2/auto-orient/thumbnail/240x270%3E/format/webp" alt="">
+          </div>
+          <div class="left_img ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
+            <img src="http://res1.eqh5.com/FiyfpG54rO1fZxeqPi3yVC6AuIN-?imageMogr2/auto-orient/thumbnail/195x242%3E/format/webp" alt="">
+          </div>
+          <div class="open ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="1.8s">
+            <h2>贝 <br>贝 <br>出 <br>品</h2>
+          </div>
+          <div class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="2s">
+            <span class="iconfont icon-arrow-right-black next ani infinite" swiper-animate-effect="flash" swiper-animate-duration="1.5s" swiper-animate-delay="2s"></span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="right_img ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
+            <img src="http://res1.eqh5.com/FqhhEwOYaC5SIF4zrOy0OiK1fn_i?imageMogr2/auto-orient/thumbnail/240x270%3E/format/webp" alt="">
+          </div>
+          <div class="left_img ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
+            <img src="http://res1.eqh5.com/FiyfpG54rO1fZxeqPi3yVC6AuIN-?imageMogr2/auto-orient/thumbnail/195x242%3E/format/webp" alt="">
+          </div>
+          <div class="show ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.8s">
+            <div class="top_border ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="2s">
+              <img src="http://res1.eqh5.com/FteWqAOYusKCyhv-EqpGBSWE6NRn?imageMogr2/auto-orient/thumbnail/394x182%3E/format/webp" alt="">
+              <p>Spring Loader</p>
+            </div>
+            <div class="topImg ani" swiper-animate-effect="flip" swiper-animate-duration="1.5s" swiper-animate-delay="1.5s">
+              <img src="http://res1.eqh5.com/o_1bbb26crmami1bsd1slt1n7g12ku25.jpg?imageMogr2/auto-orient/thumbnail/240x390%3E/format/webp" alt="">
+            </div>
+            <div class="tit ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="2.5s">
+              <p>2018春装上新</p>
+            </div>
+            <div class="bottom ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="3s">
+              <img src="http://res1.eqh5.com/o_1bbb26crm1ij815jvtsd1m6317so20.jpg?imageMogr2/auto-orient/thumbnail/216x378%3E/format/webp" alt="">
+            </div>
+            <div class="b_right ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1.5s" swiper-animate-delay="3.5s">
+              <p>宽松型</p>
+            </div>
+          </div>
+          <div class="hideBox" onclick="hideBox()">
+            跳过
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+  <script src="./swiper.min.js"></script>
+  <script src="./swiper.animate1.0.2.min.js"></script>
+  <script>
+    if(localStorage.getItem('first') === 'ok') {
+      document.getElementById('swiper-cover').style.display = 'none';
+    } else {
+      document.getElementById('swiper-cover').style.display = 'block';
+    }
+    function hideBox () {
+      document.getElementById('swiper-cover').style.display = 'none';
+      localStorage.setItem('first', 'ok');
+    }
+    var mySwiper = new Swiper ('#swiper-cover', {
+      on:{
+        init: function(){
+          swiperAnimateCache(this); //隐藏动画元素
+          swiperAnimate(this); //初始化完成开始动画
+        },
+        slideChangeTransitionEnd: function(){
+          swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+          //this.slides.eq(this.activeIndex).find('.ani').removeClass('ani'); 动画只展现一次，去除ani类名
+        }
+      }
+    })
+  </script>
+</html>

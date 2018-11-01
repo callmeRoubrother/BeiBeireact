@@ -1,0 +1,124 @@
+@import "@/lib/reset.scss";
+
+.myUser{
+  @include rect(100%, 100%);
+  .content{
+    @include rect(100%, 100%);
+    .loginBox{
+      @include rect(100%, 1rem);
+      @include gradient(linear, left, #ff4d1b, #ff2b24);
+      @include text-align();
+      @include line-height(1rem);
+      @include justify-content();
+      position: relative;
+      overflow: visible;
+      .logined{
+        @include rect(100%, 100%);
+        @include flexbox();
+        @include justify-content(space-between);
+        span{
+          @include line-height(.8rem);
+          @include flex();
+          border: 0;
+        }
+      }
+      span{
+        margin: 0 .05rem;
+        @include padding(.1rem .2rem);
+        @include border-radius(.2rem);
+        @include text-color(white);
+        border: 2px solid white;
+        @include text-align();
+        @include line-height(.3rem);
+      }
+      .checkIn{
+        position: absolute;
+        bottom: -.2rem;
+        left: 2%;
+        @include rect(96%, .4rem);
+        @include border-radius(.1rem);
+        @include background-color(white);
+        @include flexbox();
+        @include justify-content(space-around);
+        span{
+          padding:0;
+          @include text-color(#666);
+          @include font-size(.18rem);
+          @include line-height(.4rem);
+        }
+      }
+    }
+    .top{
+      @include flexbox();
+      @include justify-content(space-between);
+      @include rect(100%, .5rem);
+      @include line-height(.5rem);
+      border-bottom: 1px solid #ccc;
+      h2{
+        @include text-align(left);
+        padding-left: .1rem;
+        @include flex();
+      }
+      p{
+        @include flex();
+        @include text-align(right);
+        @include text-color(#666);
+      }
+    }
+    .order{
+      margin-top: .3rem;
+      @include background-color(white);
+      .afterOrder{
+        padding: .1rem .1rem;
+        @include flexbox();
+        @include justify-content(space-between);
+        div{
+          @include text-align();
+          p{
+            @include font-size(.22rem);
+            @include text-color(#ff5414);
+          }
+        }
+      }
+    }
+    .wallet{
+      background-color: white;
+      margin-top: .1rem;
+      .wallet_func{
+        padding: .1rem .1rem;
+        @include flexbox();
+        @include justify-content(space-between);
+        div{
+          p{
+            @include text-align();
+            span{
+              @include text-color(#ff1a1a);
+              @include font-size(.22rem);
+              margin-right: .03rem;
+            }
+          }
+        }
+      }
+    }
+    .adv{
+      @include rect(100%, 1.2rem);
+      background-color: white;
+      margin-top: .1rem;
+      @include flexbox();
+      @include flex-direction(column);
+      ul{
+        @include flexbox();
+        @include flex();
+        @include rect(100%, auto);
+        @include justify-content(space-between);
+        li{
+          @include text-align();
+          p{
+            @include font-size(.22rem);
+            @include text-color(#ff5018);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import "@/lib/reset.scss";
+.am-search {
+  border-bottom: 1px solid #ddd;
+}
+.sub-title {
+  color: #888;
+  font-size: 14px;
+  padding: 30px 0 18px 0;
+}
+.header{
+  .am-search{
+    @include flex();
+    height: 100%;
+    border-bottom: 1px solid #ff4965;
+    @include background-color(#ff4965);
+    .am-search-cancel{
+      @include font-size(.14rem);
+      @include text-color(white);
+    }
+  }
+}
+.content{
+  h3{
+    @include rect(100%, .5rem);
+    @include line-height(.5rem);
+    @include padding(0 0 0 .2rem);
+  }
+  .hotSearch{
+    @include flexbox();
+    @include padding(0 .2rem);
+    @include flex-wrap(wrap);
+    li{
+      @include padding(.1rem .2rem);
+      @include margin(.1rem .05rem);
+      @include wrap(nowrap);
+      @include border(1px, #f66, solid);
+    }
+  }
+}

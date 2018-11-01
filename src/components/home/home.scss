@@ -1,0 +1,55 @@
+@import '@/lib/reset.scss';
+.header{
+  @include flexbox();
+  @include line-height(.44rem);
+  @include justify-content(space-between);
+  @include padding(0 .1rem);
+  span{
+    @include font-size(.22rem);
+    @include text-color(white);
+  }
+  .sec{
+    @include rect(80%, 80%);
+    position: relative;
+    input{
+      @include rect(100%, 80%);
+      @include border-radius(.1rem);
+      border: 0;
+      background-color: rgba(255,255,255,0.5);
+      outline: none;
+      padding-left: .3rem;
+      color: white;
+    }
+    i{
+      position: absolute;
+      left: .1rem;
+      color: rgba(255,255,255,.6);
+    }
+    em{
+      position: absolute;
+      right:.1rem;
+      color: rgba(255,255,255,.6);
+    }
+  }
+}
+.am-carousel{
+  touch-action: pan-y;
+}
+h2{
+  @include rect(100%, .45rem);
+  @include text-align();
+  @include line-height(.45rem);
+}
+#backTop{
+  @include rect(.5rem, .5rem);
+  @include background-color(#3a3e47);
+  position: fixed;
+  bottom:.6rem;
+  right:.3rem;
+  @include border-radius(50%);
+  @include font-size(.22rem);
+  @include text-color(white);
+  @include text-align();
+  @include line-height(.5rem)
+  //display: none;
+}

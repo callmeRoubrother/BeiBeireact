@@ -1,0 +1,16 @@
+@import '@/lib/reset.scss';
+#mainContent_cover{
+  @include rect(100%, 5rem);
+  .am-list-view-scrollview{
+    height: 5rem !important;
+  }
+}
+.robNow{
+  @include rect(.6rem, .25rem);
+  border-radius: 20px;
+  @include text-align();
+  @include line-height(.25rem);
+  @include border-radius(.2rem);
+  @include border(2px, #333, solid);
+  float: right;
+}

@@ -1,0 +1,46 @@
+@import '@/lib/reset.scss';
+.header{
+  @include padding(0 .1rem);
+  @include justify-content(space-between);
+  @include line-height(.44rem);
+  span{
+    @include text-color(#9f9f9f);
+  }
+  p{
+    @include text-color(white);
+  }
+}
+.codeTit{
+  @include rect(100%, .8rem);
+  @include line-height(.8rem);
+  padding-left: .3rem;
+}
+.writeCode{
+  @include rect(100%, .5rem);
+  @include padding(0 .15rem);
+  @include flexbox();
+  @include justify-content(space-between);
+  li{
+    @include flex();
+    @include margin(0 .05rem);
+    border-bottom: .03rem solid #e3e3e3;
+    input{
+      @include rect(100%, 100%);
+      border: 0;
+      @include text-align();
+    }
+  }
+}
+.afreshCode{
+  @include rect(100%, .4rem);
+  @include padding(0 .15rem);
+  @include text-align(right);
+  @include line-height(.4rem);
+  @include text-color(#00ca00);
+}
+.problem{
+  @include rect(100%, auto);
+  @include text-align();
+  position: fixed;
+  bottom: .1rem;
+}

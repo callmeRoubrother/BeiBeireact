@@ -1,0 +1,183 @@
+@import '@/lib/reset.scss';
+html, body, .container, #root, #swiper-cover{
+  @include rect(100%, 100%);
+  -webkit-overflow-scrolling:touch;
+  @include overflow();
+}
+#swiper-cover{
+  position: absolute;
+  .swiper-pagination{
+    @include rect(.15rem, .15rem);
+    @include background-color(white);
+  }
+  .swiper-wrapper{
+    .swiper-slide{
+      &:nth-child(1){
+        background: url("http://res1.eqh5.com/o_1bajeprastkh1lt1bkq1ieg18c89.jpg?imageMogr2/auto-orient/thumbnail/378x524%3E/format/webp") no-repeat;
+        background-size: cover;
+        .open{
+          @include rect(1.6rem, 2.9rem);
+          position: absolute;
+          left:50%;
+          top:50%;
+          transform: translate(-50%, -50%);
+          background: url("http://res1.eqh5.com/FrsyLyCaHV4xNXLxnRvcxhdXRZm_?imageMogr2/auto-orient/thumbnail/164x294%3E/format/webp") no-repeat;
+          background-size: cover;
+          h2{
+            position: absolute;
+            @include text-color(white);
+            @include font-size(.22rem);
+            //word-wrap: break-word;
+            //letter-spacing: 1rem;
+            //@include text-align();
+          }
+        }
+        .next{
+          position: absolute;
+          right: .2rem;
+          top: 50%;
+          @include rect(.3rem, .3rem);
+          @include text-color(#297d5b);
+          @include font-size(.26rem);
+        }
+      }
+      .left_img{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+      .right_img{
+        position: absolute;
+        right:0;
+        top:0;
+      }
+      &:nth-child(2){
+        background: url("http://res1.eqh5.com/o_1bajeprastkh1lt1bkq1ieg18c89.jpg?imageMogr2/auto-orient/thumbnail/378x524%3E/format/webp") no-repeat;
+        background-size: cover;
+        .show{
+          @include rect(2.76rem, 4.38rem);
+          background: url("http://res1.eqh5.com/FkWQUqsZCkGGL8cSP-eyi-CRL0GH?imageMogr2/auto-orient/thumbnail/276x438%3E/format/webp") no-repeat;
+          position: absolute;
+          left: 50%;
+          top:50%;
+          transform: translate(-50%, -50%);
+          .top_border{
+            position: absolute;
+            top: .4rem;
+            left: .3rem;
+            img{
+              @include rect(2.2rem, .91rem);
+            }
+            p{
+              @include rect(.7rem, auto);
+              position: absolute;
+              right:0;
+              top:0;
+              @include text-color(white);
+              @include font-size(.22rem);
+              @include wrap();
+            }
+          }
+          .topImg{
+            position: absolute;
+            top: .3rem;
+            left:.3rem;
+            img{
+              @include rect(1.32rem, 1.64rem);
+            }
+          }
+          .tit{
+            position: absolute;
+            top:47%;
+            left: 10%;
+            background-color: white;
+            @include rect(80%, .5rem);
+            p{
+              @include text-color(#74b698);
+              @include font-size(.2rem);
+              @include text-align();
+              @include line-height(.5rem);
+            }
+          }
+          .bottom{
+            position: absolute;
+            bottom:5%;
+            right:7%;
+            img{
+              @include rect(1rem, 1.5rem);
+            }
+          }
+          .b_right{
+            position: absolute;
+            left:.7%;
+            bottom: 15%;
+            @include rect(50%, .5rem);
+            p{
+              @include text-align();
+              @include line-height(.5rem);
+              @include text-color(white);
+            }
+          }
+        }
+        .hideBox{
+          position: absolute;
+          bottom: .2rem;
+          right: .2rem;
+          border-radius: .2rem;
+          background-color: #297d5b;
+          @include text-color(white);
+          @include text-align();
+          @include line-height(.3rem);
+          @include rect(.6rem, .3rem);
+        }
+      }
+    }
+  }
+}
+.container {
+  @include flexbox();
+  @include flex-direction(column);
+  .box {
+    @include flex();
+    @include rect(100%, 100%);
+    @include flexbox();
+    @include overflow();
+    @include flex-direction(column);
+    .header {
+      @include rect(100%, 0.44rem);
+      @include flexbox();
+      @include background-color(#eb5133);
+      span{
+        @include text-color(white);
+      }
+    }
+    .content {
+      @include flex();
+      @include rect(100%, 100%);
+      @include overflow();
+    }
+  }
+  .footer {
+    @include rect(100%, 0.5rem);
+    @include background-color(#eee);
+
+    ul {
+      @include rect(100%, 100%);
+      @include flexbox();
+      a {
+        @include flex();
+        @include flexbox();
+        @include justify-content();
+        @include flex-direction(column);
+        @include align-items();
+        @include text-color(#333);
+        &.active {
+          @include text-color(#f66);
+        }
+        span{
+          @include font-size(.24rem);
+        }
+      }
+    }
+  }
+}
